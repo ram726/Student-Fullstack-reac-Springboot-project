@@ -260,10 +260,18 @@ Branch checklist before PR
 - Add integration tests for controller endpoints (MockMvc) and E2E tests for the frontend (Cypress/Playwright).
 - Add Dockerfile for backend and Docker Compose to bring up backend + MySQL + frontend.
 
-## Verification
 
+## Verification
 - I validated the backend endpoints and data model by inspecting `StudentController.java` and `Student.java`.
 - I inspected `application.properties` for DB and server configuration.
 - I inspected `frontend/stufront/package.json` for scripts and dependencies.
 
-If you want, I can:
+## Snapshot
+<img width="1891" height="907" alt="image" src="https://github.com/user-attachments/assets/db98b7e8-9e27-4a44-b137-2d23a7abf87d" />
+<img width="1877" height="902" alt="image" src="https://github.com/user-attachments/assets/059d55be-9549-4e7f-b7d0-37a1e20cbe4c" />
+<img width="1903" height="812" alt="image" src="https://github.com/user-attachments/assets/85002a2d-7fa5-40d9-9114-c78c47f5b5cd" />
+<img width="1875" height="868" alt="image" src="https://github.com/user-attachments/assets/8c2887fa-2082-49f0-9773-32f6f19dd049" />
+<img width="1882" height="822" alt="image" src="https://github.com/user-attachments/assets/695a2cce-8100-47db-b67d-4ec66bd8f824" />
+<img width="1856" height="870" alt="image" src="https://github.com/user-attachments/assets/eea74676-caf2-463b-a5ff-1db885948c64" />
+<img width="1855" height="852" alt="image" src="https://github.com/user-attachments/assets/3d035d57-0778-4706-bbf6-a55c4c25ea4c" />
+<img width="1590" height="255" alt="image" src="https://github.com/user-attachments/assets/0dbc0fe7-8982-43bf-9a6b-dee734bda066" />
