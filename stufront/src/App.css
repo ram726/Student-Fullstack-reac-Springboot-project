@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Compact details grid used by ViewUsers */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.details-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+}
+
+.details-label {
+  min-width: 88px;
+  color: #6c757d;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.details-value {
+  font-weight: 600;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .details-grid {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+  .details-value {
+    white-space: normal; /* allow wrapping on small screens */
+  }
+}
+
+/* Student list responsive cards for small screens */
+.student-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.student-card .card-thumb {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-card .card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-card .card-body {
+  flex: 1 1 auto;
+  min-width: 0; /* allow flex children to shrink for text-overflow */
+}
+
+.student-card .card-body .card-title {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.student-card .card-body .card-sub {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+@media (min-width: 768px) {
+  .student-cards { display: none; }
+}
+
+@media (max-width: 767.98px) {
+  .table.d-none.d-md-table { display: none !important; }
+}
